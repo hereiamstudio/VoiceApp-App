@@ -1,0 +1,90 @@
+buildscript {
+    ext {
+        androidCompileSdkVersion = 33
+        androidBuildToolsVer = '33.0.2'
+        androidMinSdkVersion = 24
+        androidTargetSdkVersion = 31
+
+        kotlinVersion = '1.8.0'
+        kotlinCoroutinesVersion = '1.6.4'
+
+        daggerVersion = '2.45'
+
+        androidXCoreVersion = '1.9.0'
+        androidXActivityVersion = '1.6.1'
+        androidXFragmentVersion = '1.5.5'
+        androidAppCompatVersion = '1.6.1'
+        androidLifecycleVersion = '2.5.1'
+        androidConstraintLayoutVersion = '2.1.4'
+        androidRecyclerViewVersion = '1.2.1'
+        materialDesignVersion = '1.8.0'
+        androidWorkVersion = '2.8.0'
+        androidBiometricVersion = '1.1.0'
+        androidViewPager2Version = '1.0.0'
+
+        firebaseBomVersion = '31.2.2'
+
+        gsonVersion = '2.10.1'
+        timberVersion = '5.0.1'
+
+        // Testing dependencies
+        junitVersion = '4.13.2'
+        androidTestExtVersion = '1.1.5'
+        androidTestVersion = '1.5.0'
+        androidArchCoreTestingVersion = '2.1.0'
+        androidEspressoVersion = '3.5.1'
+        mockitoVersion = '5.1.1'
+        mockitoKotlinVersion = '2.2.0'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+
+        // Play Services and Firebase
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.4'
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:3.2.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_11.toString()
+            freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task allStagingUnitTests {
+    group = JavaBasePlugin.VERIFICATION_GROUP
+    description = 'Runs all staging unit tests.'
+
+    dependsOn ':core:test'
+    dependsOn ':androidcore:testStagingUnitTest'
+    dependsOn ':app:testStagingUnitTest'
+}
+
+task allReleaseUnitTests {
+    group = JavaBasePlugin.VERIFICATION_GROUP
+    description = 'Runs all release unit tests.'
+
+    dependsOn ':core:test'
+    dependsOn ':androidcore:testReleaseUnitTest'
+    dependsOn ':app:testReleaseUnitTest'
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/default_padding"
+    android:textAlignment="viewStart">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/large_padding"
+        android:src="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/completeTitle"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textAlignment="inherit"
+        android:text="@string/interviewcomplete_title" />
+
+    <TextView
+        android:id="@+id/completeDesc"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textAlignment="inherit"
+        android:text="@string/interviewcomplete_blurb" />
+
+    <!-- If we don't include this weirdly the fragment doesn't match parent... -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="xlarge_padding">48dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="vsmall_padding">4dp</dimen>
+
+    <dimen name="vertical_padding_text_icons">6dp</dimen>
+    <dimen name="horizontal_padding_text_icons">8dp</dimen>
+
+    <dimen name="et_padding">20dp</dimen>
+
+    <dimen name="top_title_margin">42dp</dimen>
+
+    <dimen name="height_text_button">34dp</dimen>
+
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+
+</resources>

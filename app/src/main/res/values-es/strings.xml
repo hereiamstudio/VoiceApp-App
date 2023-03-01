@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">VoiceApp</string>
+
+    <!--
+    ******************************
+    * General and common strings *
+    ******************************
+    -->
+    <string name="done">Hecho</string>
+    <string name="cont">Continuar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="next">Próximo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="answer">Respuesta</string>
+    <string name="required">Requerido</string>
+    <string name="gender_male">Masculino</string>
+    <string name="gender_female">Femenino</string>
+    <string name="gender_other">Otro</string>
+
+    <string name="consent_step">Paso %1$d/%2$d</string>
+    <string name="help_free_text">Escriba o capture la respuesta de su/suya participante a partir de su voz</string>
+
+    <!--
+    *************************************
+    * AddQuestionDialogFragment strings *
+    *************************************
+    -->
+    <string name="addquestiondialog_title">Añada una pregunta</string>
+    <string name="addquestiondialog_blurb">Cree una nueva pregunta o añada una pregunta existente</string>
+    <string name="addquestiondialog_btn_create">Crear nuevo</string>
+    <string name="addquestiondialog_btn_select">Seleccionar existente</string>
+
+    <!--
+    ********************************************
+    * AddQuestionWarningDialogFragment strings *
+    ********************************************
+    -->
+    <string name="addquestionwarningdialog_title">¡Cuidado!</string>
+    <string name="addquestionwarningdialog_blurb">Al continuar se borrarán las respuestas ya introducidas. Si quiere añadir una pregunta de prueba para esta pregunta, seleccione "Cancelar" y "Siguiente". Si quiere descartar esta respuesta y añadir una prueba para la pregunta anterior, seleccione "Continuar".</string>
+
+    <!--
+    **********************************************
+    * ConfirmExitInterviewDialogFragment strings *
+    **********************************************
+    -->
+    <string name="confirmexitinterview_title">¿Salir de la entrevista?</string>
+    <string name="confirmexitinterview_blurb">¿Está seguro/a de que quiere salir de la entrevista?</string>
+
+    <!--
+    ***************************************
+    * ConfirmGoBackDialogFragment strings *
+    ***************************************
+    -->
+    <string name="confirmgobackdialog_title">Volver</string>
+    <string name="confirmgobackdialog_message">¿Está seguro/a de que de que quiere reiniciar esta respuesta? Esto eliminará la respuesta anterior.</string>
+    <string name="confirmgobackdialog_btn_confirm">Volver a la pregunta previa</string>
+
+    <!--
+    *********************************************
+    * ConfirmRemoveAnswerDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmremoveanswer_title">Eliminar respuesta</string>
+    <string name="confirmremoveanswer_blurb">¿Está seguro/a de que quiere eliminar esta respuesta?</string>
+
+    <!--
+    *********************************************
+    * ConfirmSkipQuestionDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmskipquestion_title">¿Ignorar la pregunta?</string>
+    <string name="confirmskipquestion_blurb">¿Estás seguro de que quieres ignorar esta pregunta?</string>
+
+    <!--
+    ***************************
+    * ConsentActivity strings *
+    ***************************
+    -->
+    <string name="consent_question_failed">Lo sentimos. Por favor, relea la información sobre el consentimiento</string>
+    <string name="consent_complete">Consentimiento completo</string>
+    <string name="consent_additional_complete">Consentimiento adicional completo</string>
+
+    <!--
+    ****************************************
+    * ConsentCheckQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="consentcheckquestion_error_please_select">Por favor, seleccione una respuesta</string>
+    <string name="consentcheckquestion_error_incorrect">Lo siento, eso no es correcto</string>
+
+    <!--
+    **********************************
+    * ConsentConfirmFragment strings *
+    **********************************
+    -->
+    <string name="consentconfirm_title">Confirmar el consentimiento</string>
+    <string name="consentconfirm_blurb">¿Está seguro/a de que quiere participar?</string>
+    <string name="consentconfirm_blurb_extra_consent">¿Está seguro/a de que quiere que el/la participante tome parte?</string>
+
+    <!--
+    ****************************************
+    * ConsentExtraRelationFragment strings *
+    ****************************************
+    -->
+    <string name="consentextrarelation_title">¿Cuál es su relación con el/la participante?</string>
+    <string name="consentextrarelation_input_helper">Escriba o capture el audio de su respuesta</string>
+
+    <!--
+    ***********************************
+    * ConsentPreCheckFragment strings *
+    ***********************************
+    -->
+    <string name="consentprecheck_title">Antes de empezar…</string>
+    <string name="consentprecheck_subtitle_make_sure">Asegúrese de que:</string>
+    <string name="consentprecheck_make_sure_item_1">Usted está en algún lugar tranquilo</string>
+    <string name="consentprecheck_make_sure_item_2">El/la participante se siente cómodo/a</string>
+    <string name="consentprecheck_make_sure_item_3">Está en un lugar privado</string>
+    <string name="consentprecheck_subtitle_dont_forget">No se olvide de:</string>
+    <string name="consentprecheck_dont_forget_item_1">Pruebe la función "Voice-To-Text" para recoger las respuestas de sus participantes</string>
+    <string name="consentprecheck_btn_add">Añadir participante</string>
+
+    <!--
+    *****************************************
+    * ConsentRespondentInfoFragment strings *
+    *****************************************
+    -->
+    <string name="consent_respondent_info_title">Sobre el/la participante</string>
+    <string name="consent_respondent_info_heading">¿Quién es su participante?</string>
+    <string name="consent_respondent_info_age_question">¿Quién es su participante?</string>
+    <string name="consent_respondent_info_age_question_with_age">¿Cuál es la edad del/de la participante? %d</string>
+    <string name="consent_respondent_info_age_desc">Seleccione la edad en el menú desplegable</string>
+    <string name="consent_respondent_info_question_additional_consent">¿Necesita el/la participante un consentimiento adicional?</string>
+    <string name="consent_respondent_info_help_additional_consent">El/la participante necesita un consentimiento adicional si:\n\n• No tiene todavía la edad legal del país (se le reconoce como adulto)\n• Tiene una discapacidad que le impide dar su consentimiento</string>
+    <string name="consent_respondent_info_question_beneficiary">¿Es el/la participante un/a beneficiario/a?</string>
+    <string name="consent_respondent_info_help_beneficiary">El/la participante es un/a "beneficiario/a" si se da alguno de los siguientes casos:\n• Ellos/as o sus familiares directos han recibido alguna distribución de programas de transferencias monetarias (PTM) o otra forma de ayuda de el equipo en el último año natural \n• Se han beneficiado directamente de, o han participado en, cualquier otro programa de desarrollo o humanitario dirigido por el equipo en el último año natural</string>
+    <string name="consent_respondent_info_question_gender">¿Cuál es el género de su/suya participante?</string>
+    <string name="consent_respondent_info_help_gender">El/la participante puede elegir "otro", si se da alguna de las siguientes circunstancias:\n\n• Son miembros de un "tercer género" reconocido en su país\n• No se identifican como "hombre" o "mujer"\n• Prefieren no identificar su género como parte de su respuesta a la entrevista</string>
+    <string name="consent_respondent_info_error_incomplete">Por favor, responda a todas las preguntas</string>
+
+    <!--
+    **********************************
+    * ConsentWrittenFragment strings *
+    **********************************
+    -->
+    <string name="consentwritten_title">Consentimiento de la entrevista</string>
+    <string name="consentwritten_about">Esta sección trata sobre el almacenamiento de datos y la privacidad</string>
+    <string name="consentwritten_subheading">Explique a su/suya entrevistado/a:</string>
+    <string name="consentwritten_text_1"><![CDATA[1. Le haré preguntas sobre su experiencia en la situación actual. Su participación en esta entrevista es voluntaria. Si en algún momento desea interrumpir la entrevista, puede hacerlo.\n\n
+2. Voy a grabar sus respuestas para que podamos revisarlas más adelante con más detalle. La grabación creará un texto; no guardaremos un archivo de audio con su voz. Nada de lo que me diga será personalmente atribuible a usted para quien vea sus respuestas.\n\n
+3. También le pediré su consentimiento al final de esta entrevista, para confirmar que está de acuerdo con que comparta las grabaciones y el texto que hemos hecho.\n\n
+4. Los datos que grabemos y captemos serán compartidos con el personal de el equipo, de forma anónima, para ayudarnos a entender mejor cómo podemos ser más útiles y responder a las necesidades de usted y de su comunidad.\n\n
+5. Dado que los datos recogidos serán completamente anónimos, una vez entregados al final de la entrevista no podrán ser recuperados o borrados específicamente. Le pediré de nuevo su consentimiento antes de enviar los datos registrados.]]>
+</string>
+    <string name="consentwritten_text_2"><![CDATA[6. Sus respuestas se mantendrán en línea, de forma segura - no serán compartidas ni accesibles públicamente. Sus respuestas serán confidenciales.\n\n
+7. Si usted me comunica información sensible, como incidentes de daño a sí mismo o a otros, es posible que los comunique para que se investiguen, o que le remita a lugares donde pueda acceder a apoyo y servicios, si así lo desea.\n\n
+8. Si revela ciertas acciones poco éticas o ilegales por parte del personal de el equipo o de la organización que responde, podré tener que iniciar su investigación y revisión\n\n
+Si da su consentimiento en nombre de otra persona, explíquelo a su interlocutor:\n\n
+9. Usted da su consentimiento en nombre de su hijo menor de edad, o en su calidad de cuidador de la persona que va a ser entrevistada si está mental o físicamente incapacitada.]]>
+</string>
+    <string name="consentwritten_btn_answer_question">Responder a la pregunta</string>
+
+    <!--
+    *************************************
+    * InterviewCompleteFragment strings *
+    *************************************
+    -->
+    <string name="interviewcomplete_title">Entrevista completa</string>
+    <string name="interviewcomplete_blurb">Su entrevista se está sincronizando. Puede pasar de esta pantalla y continuará la sincronización en segundo plano.</string>
+
+    <!--
+    ********************************************
+    * InterviewEnumeratorNotesFragment strings *
+    ********************************************
+    -->
+    <string name="interviewenumeratornotes_title">Notas de la entrevista</string>
+    <string name="interviewenumeratornotes_heading">Introduzca sus notas</string>
+    <string name="interviewenumeratornotes_input_hint">Nota</string>
+    <string name="interviewenumeratornotes_input_helper">Añada una reflexión o cualquier información adicional que desee capturar de la entrevista</string>
+    <string name="interviewenumeratornotes_btn_add">Añada una nota</string>
+
+    <!--
+    *********************************
+    * InterviewListActivity strings *
+    *********************************
+    -->
+    <string name="interviewlist_item_label_new">Nuevo</string>
+    <plurals name="interviewlist_item_assigned_interviews">
+        <item quantity="one">%d entrevista asignada</item>
+        <item quantity="other">%d entrevistas asignadas</item>
+    </plurals>
+    <plurals name="interviews_item_questions_count">
+        <item quantity="one">%d pregunta</item>
+        <item quantity="other">%d preguntas</item>
+    </plurals>
+    <plurals name="interviewlist_item_completed_interviews">
+        <item quantity="one">%d entrevista completada</item>
+        <item quantity="other">%d entrevistas completadas</item>
+    </plurals>
+
+    <!--
+    ****************************************
+    * InterviewNewQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="interviewnewquestion_title">Introduzca su pregunta</string>
+    <string name="interviewnewquestion_input_hint">Pregunta</string>
+    <string name="interviewnewquestion_input_helper">Escriba, o utilice su voz, para capturar su pregunta</string>
+
+    <!--
+    *************************************
+    * InterviewOverviewFragment strings *
+    *************************************
+    -->
+    <string name="interviewoverview_title">Resumen de la entrevista</string>
+    <plurals name="interviewoverview_description">
+        <item quantity="one">%1$d Preguntas, %2$d Ignoradas</item>
+        <item quantity="other">%1$d Preguntas, %2$d Ignoradas</item>
+    </plurals>
+    <string name="interviewoverview_btn_cancel">Cancelar entrevista</string>
+    <string name="interviewoverview_btn_confirm">Confirmar respuestas</string>
+    <string name="interviewoverview_item_label_skipped">Ignorado</string>
+    <string name="interviewoverview_item_label_flagged">Marcada</string>
+    <string name="interviewoverview_item_label_probing">Indagando</string>
+    <string name="interviewoverview_item_label_starred">Destacada</string>
+    <string name="interviewoverview_item_btn_flag">Pregunta marcada</string>
+    <string name="interviewoverview_item_btn_star">Pregunta destacada</string>
+    <string name="interviewoverview_item_btn_retake">Retomar la pregunta</string>
+    <string name="interviewoverview_item_btn_remove">Eliminar Respuesta</string>
+
+    <!--
+    ********************************
+    * LanguagePackActivity strings *
+    ********************************
+    -->
+    <string name="languagepack_title">Los paquetes de idioma</string>
+    <string name="languagepack_blurb">Antes de empezar, descargue los siguientes paquetes de idiomas, ya que los necesitará para realizar sus entrevistas. Los paquetes de idiomas le permitirán capturar la voz de sus encuestados/as para sus respuestas utilizando la función de "Voz a Texto" de Google.</string>
+    <string name="languagepack_subtitle">Los paquetes de idioma:</string>
+    <string name="languagepack_item_btn_test">Prueba</string>
+    <string name="languagepack_item_btn_manage">Gestionar</string>
+
+    <!--
+    *************************
+    * LoginActivity strings *
+    *************************
+    -->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_btn_login">Iniciar sesión</string>
+    <string name="login_btn_forgot_password">¿Ha olvidado su contraseña?</string>
+    <string name="loginactivity_snackbar_auth_failed">La autenticación ha fallado, compruebe su correo electrónico y contraseña o regístrese</string>
+
+    <!--
+    ******************************
+    * OnboardingActivity strings *
+    ******************************
+    -->
+    <string name="onboarding_option_item_close">Cerrar</string>
+
+    <!--
+    **********************************
+    * OnboardingItemFragment strings *
+    **********************************
+    -->
+    <string name="onboarding_fragment_item_1_title">Speech-to-Text</string>
+    <string name="onboarding_fragment_item_1_blurb">Al usar la conversión de voz a texto
+        \"Speech-to-Text\" puede capturar todo lo que el/la participante dice sin necesidad de
+        escribir nada u olvidar lo que está diciendo.\n\nEsto no mantendrá una grabación de audio,
+        sino que creará texto en la pantalla de su aplicación.\n\nPuede utilizar esta función
+        siempre que vea el icono del micrófono, presionando el icono y hablando en el teléfono.\n\n
+        Asegúrese de mantener el teléfono cerca del participante cuando hable.\n\n"Puede corregir
+        cualquier error tocando el texto y escribiendo con el teclado.
+    </string>
+    <string name="onboarding_fragment_item_2_title">Añadir una pregunta (Indagando)</string>
+    <string name="onboarding_fragment_item_2_blurb">Puede hacer una pregunta de seguimiento a su
+        encuestado para comprender mejor su respuesta añadiendo una pregunta de sondeo.\n\nAñada una
+        pregunta de sondeo presionando el icono + y seleccionando de una lista de preguntas
+        existentes o escriba una nueva antes de pedir a su encuestado que responda.\n\nSi desea
+        formular una pregunta de sondeo para la Pregunta 1, después de que el / la participante haya
+        respondido a la Pregunta 1, seleccione \"Siguiente\". En la pantalla que muestra la Pregunta
+        2, añada la pregunta de sondeo relacionada con la Pregunta 1.
+    </string>
+    <string name="onboarding_fragment_item_3_title">"Señalar y destacar</string>
+    <string name="onboarding_fragment_item_3_blurb">Si cree que un/a participante ha revelado algún
+        problema de seguridad o protección, puede señalar la respuesta para informar a los/las
+        investigadores.\n\nPara ello, pulse el icono de la bandera en la parte superior de la
+        pantalla.\n\nSi cree que un/a encuestado/a ha dicho algo muy interesante para el análisis de
+        datos, puede destacar la respuesta para informar a los investigadores.\n\nPara ello, pulse
+        el icono de la estrella en la parte superior de la pantalla\n\nSólo puede señalar y marcar
+        con una estrella las preguntas de respuesta abierta, y no puede señalar o marcar con una
+        estrella las respuestas a las preguntas de varias opciones o de una sola opción.
+    </string>
+    <string name="onboarding_fragment_item_4_title">Resumen de la entrevista</string>
+    <string name="onboarding_fragment_item_4_blurb">Antes de enviar la entrevista, verá una pantalla
+        con un resumen de todas las preguntas. Esto le mostrará las preguntas que ha marcado,
+        marcado con estrella, omitido y las preguntas de sondeo que ha añadido.\n\nSi su
+        encuestado/a no se siente cómodo/a con su respuesta, puede volver a formular la pregunta o
+        eliminar la respuesta desde esta pantalla. No podrá ver la respuesta original.\n\nPuede
+        señalar y marcar con una estrella a una respuesta en esta pantalla si ha olvidado hacerlo en
+        la entrevista.
+    </string>
+    <string name="onboarding_fragment_item_5_title">Notas de la entrevista</string>
+    <string name="onboarding_fragment_item_5_blurb">Al final de una entrevista puede añadir
+        reflexiones o información adicional sobre la entrevista que quiera compartir con los/las
+        investigadores/as\n\nPara ello, pulse el icono de Notas de la entrevista en la parte
+        inferior de la pantalla para añadir una nota.\n\nPuede añadir la nota utilizando la función
+        \"Speech-to-Text\" o escribiendo.
+    </string>
+
+    <!--
+    ***************************
+    * PinCodeActivity strings *
+    ***************************
+    -->
+    <string name="pincode_title_create">Cree su PIN de 6 dígitos</string>
+    <string name="pincode_title_reset">Restaure su PIN de 6 dígitos</string>
+    <string name="pincode_title_validate_existing">Valide su PIN de 6 dígitos</string>
+    <string name="pincode_title_validate_new">Valide su nuevo PIN de 6 dígitos</string>
+    <string name="pincode_title_verification">Introduzca su PIN</string>
+    <string name="pincode_blurb_create">Para proteger la seguridad de su aplicación, cree un código PIN de 6 dígitos. Este PIN se utilizará para acceder a la VoiceApp durante esta sesión. Cuando salga de la aplicación tendrá que crear un nuevo PIN.</string>
+    <string name="pincode_blurb_verify">Para proteger la seguridad de su aplicación, introduzca su código PIN de 6 dígitos.</string>
+    <string name="pincode_enter_pin">Introduzca su código PIN:</string>
+    <string name="pincode_btn_forgot">¿Ha olvidado su código PIN?</string>
+    <string name="pincode_pin_created">PIN creado</string>
+    <string name="pincode_message_created">Código PIN creado</string>
+    <string name="pincode_message_reset">Código PIN restablecido</string>
+    <string name="pincode_message_changed">Código PIN cambiado</string>
+    <string name="pincode_message_success">PIN correcto</string>
+    <string name="pincode_message_invalid">Código PIN no válido, intento %1$d / %2$d</string>
+    <string name="pincode_snackbar_verification_failure">Los códigos PIN no coinciden</string>
+
+    <!--
+    *******************************
+    * ProjectListActivity strings *
+    *******************************
+    -->
+    <string name="projectlist_title">Sus Proyectos</string>
+    <plurals name="projectlist_item_interviewcount">
+        <item quantity="one">%d Entrevista</item>
+        <item quantity="other">%d Entrevistas</item>
+    </plurals>
+    <plurals name="projectlist_project_count">
+        <item quantity="one">%d proyecto activo</item>
+        <item quantity="other">%d proyectos activos</item>
+    </plurals>
+    <string name="projectlist_error_no_projects">Sin proyectos</string>
+
+    <!--
+    *********************************
+    * ResetPasswordActivity strings *
+    *********************************
+    -->
+    <string name="resetpassword_title">¿Ha olvidado su contraseña?</string>
+    <string name="resetpassword_blurb">Sólo necesitamos su correo electrónico registrado para enviarle instrucciones para restablecer la contraseña.</string>
+    <string name="resetpassword_btn_reset_password">Restaurar la contraseña</string>
+    <string name="resetpassword_message_success">Le hemos enviado instrucciones, por favor, consulte su correo electrónico</string>
+    <string name="resetpassword_message_error">No existe una cuenta con este correo electrónico</string>
+
+    <!--
+    ****************************
+    * ResetPinActivity strings *
+    ****************************
+    -->
+    <string name="resetpin_btn_reset">Restablecer el código PIN</string>
+
+    <!--
+    ****************************
+    * SettingsActivity strings *
+    ****************************
+    -->
+    <string name="settings_title">Configuración</string>
+    <string name="settings_item_reset_pin">Restaurar el código PIN</string>
+    <string name="settings_item_language_packs">Los paquetes de idioma</string>
+    <string name="settings_item_guide">Guía</string>
+    <string name="settings_item_logout">Cerrar sesión</string>
+    <string name="settings_version">Versíon %s</string>
+
+    <!--
+    *********************************
+    * SkipLogicInfoFragment strings *
+    *********************************
+    -->
+    <string name="skiplogicinfo_fragment_title">Algo que hay que saber antes de empezar</string>
+    <string name="skiplogicinfo_fragment_blurb">Esta entrevista incluye algunas preguntas de lógica de salto.\n\nNo necesita hacer nada para que esto funcione, simplemente haga las preguntas y será dirigido al lugar correcto de la entrevista según las respuestas de su entrevistado.\n\nEn el caso de las entrevistas con lógica de omisión, no podrá borrar respuestas específicas ni volver a formular ninguna pregunta al final de la entrevista. En el resumen de la entrevista, sólo verá las preguntas formuladas en la misma</string>
+    <string name="skiplogicinfo_fragment_btn_start">Inicie</string>
+
+    <!--
+    ***********************************
+    * TemplatesDialogFragment strings *
+    ***********************************
+    -->
+    <string name="templatesdialog_title">Elija una pregunta para añadir</string>
+    <string name="templatesdialog_btn_add">Agregar pregunta</string>
+
+    <!--
+    ****************************
+    * WhatsNewActivity strings *
+    ****************************
+    -->
+    <string name="whatsnew_heading">Novidades</string>
+    <string name="whatsnew_subtitle">En esta nueva versión, la aplicación:</string>
+    <string name="whatsnew_changelog">• VoiceApp ahora es compatible con la lógica de salto\n• Encuentra la nueva Guía de VoiceApp en los ajustes, para obtener recordatorios y consejos sobre cómo utilizar las principales funciones de VoiceApp.</string>
+    <string name="whatsnew_btn_done">@string/done</string>
+
+    <!-- Widget strings -->
+    <string name="expandcollapseindicator_contentdescription_collapsed">Colapsado</string>
+    <string name="expandcollapseindicator_contentdescription_expanded">Expandido</string>
+</resources>

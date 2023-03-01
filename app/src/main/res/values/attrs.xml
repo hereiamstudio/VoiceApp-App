@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThemeAttributes">
+        <attr name="expandCollapseIndicatorStyle" format="reference" />
+        <attr name="progressIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandCollapseIndicator">
+        <attr name="expandedState" />
+        <attr name="collapsedContentDescription" format="string" />
+        <attr name="expandedContentDescription" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressIndicator">
+        <attr name="indicator" format="reference" />
+        <attr name="space" format="dimension" />
+        <attr name="indicatorMode" />
+        <attr name="indicatorCount" format="integer" />
+        <attr name="selectedIndex" format="integer" />
+    </declare-styleable>
+
+    <!-- This exposes the enumeration of states for ExpandCollapseIndicator. -->
+    <attr name="expandedState">
+        <enum name="collapsed" value="0" />
+        <enum name="expanded" value="1" />
+    </attr>
+
+    <attr name="indicatorMode">
+        <enum name="single" value="0" />
+        <enum name="currentAndPrevious" value="1" />
+    </attr>
+</resources>

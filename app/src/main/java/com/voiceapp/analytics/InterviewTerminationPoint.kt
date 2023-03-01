@@ -1,0 +1,10 @@
+package com.voiceapp.analytics
+
+enum class InterviewTerminationPoint {
+
+    DURING_INTERVIEW,
+    END_INTERVIEW,
+    CONSENT_NOT_GRANTED_START_RESPONDENT,
+    CONSENT_NOT_GRANTED_START_ADDITIONAL_CONSENT,
+    CONSENT_NOT_GRANTED_END
+}

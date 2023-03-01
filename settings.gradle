@@ -1,0 +1,6 @@
+include ':core',
+        ':androidcore',
+        ':app',
+        ':testutils'
+
+rootProject.name = "VoiceApp"

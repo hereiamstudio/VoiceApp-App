@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  Theme colors  -->
+    <color name="colorPrimary">@color/orange</color>
+    <color name="colorPrimaryDark">#333446</color>
+    <color name="colorAccent">#bb0055</color>
+    <color name="colorAccent_selected">#BF3D78</color>
+    <color name="colorAccentDimmed">#EAB2CC</color>
+
+    <!-- Override colors -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+
+    <!-- Colors  -->
+    <color name="white">#ffffff</color>
+    <color name="orange">#ff9d00</color>
+    <color name="orange_10">#1aff9d00</color>
+
+    <!--Text colors-->
+    <color name="text_white">#fff</color>
+    <color name="text_light">#8d8e98</color>
+    <color name="text_dark">#1c1d31</color>
+    <color name="error_text_color">#FF3B00</color>
+    <color name="toolbar_text_color">#FFFFFF</color>
+    <color name="card_text">#1c1d31</color>
+
+    <!--  Background colors  -->
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="background_light">#ebeff2</color>
+    <color name="project_list_item_background_color">#ebeff2</color>
+    <color name="progress_background_dark">#4D000000</color>
+    <color name="background_default">#1c1d31</color>
+
+    <!--  Dividers  -->
+    <color name="divider_color">#494a5a</color>
+    <color name="divider_color_light">#4D484959</color>
+    <color name="bottom_bar_divider">#ebeff2</color>
+
+    <color name="check_success">#4CAF50</color>
+    <color name="checkbox_selected">#ff7100</color>
+</resources>

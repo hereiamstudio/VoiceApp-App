@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">VoiceApp</string>
+
+    <!--
+    ******************************
+    * General and common strings *
+    ******************************
+    -->
+    <string name="done">Fait</string>
+    <string name="cont">Continuer</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="next">Suivant</string>
+    <string name="cancel">Annuler</string>
+    <string name="answer">Réponse</string>
+    <string name="required">Obligatoire</string>
+    <string name="gender_male">Homme</string>
+    <string name="gender_female">Femme</string>
+    <string name="gender_other">Autre</string>
+
+    <string name="consent_step">Etape %1$d/%2$d</string>
+    <string name="help_free_text">Tapez ou capturer la réponse de votre interlocuteur par leur voix</string>
+
+    <!--
+    *************************************
+    * AddQuestionDialogFragment strings *
+    *************************************
+    -->
+    <string name="addquestiondialog_title">Ajouter une question</string>
+    <string name="addquestiondialog_blurb">Créez une nouvelle question ou sélectionnez une question existante à partir d\'une liste</string>
+    <string name="addquestiondialog_btn_create">Créer nouvelle question</string>
+    <string name="addquestiondialog_btn_select">Sélectionner question existante</string>
+
+    <!--
+    ********************************************
+    * AddQuestionWarningDialogFragment strings *
+    ********************************************
+    -->
+    <string name="addquestionwarningdialog_title">Attention!</string>
+    <string name="addquestionwarningdialog_blurb">Si vous continuez les réponses déjà entrées seront supprimées. Si vous souhaitez ajouter un approfondissement pour cette question, sélectionnez annuler puis suivant. Si vous voulez abandonner cette réponse et ajouter un approfondissement pour la question précédente, sélectionnez continuer.</string>
+
+    <!--
+    **********************************************
+    * ConfirmExitInterviewDialogFragment strings *
+    **********************************************
+    -->
+    <string name="confirmexitinterview_title">Arrêter l\'entretien?</string>
+    <string name="confirmexitinterview_blurb">Etes-vous sûr de vouloir arrêter l\'entretien?</string>
+
+    <!--
+    ***************************************
+    * ConfirmGoBackDialogFragment strings *
+    ***************************************
+    -->
+    <string name="confirmgobackdialog_title">Retour</string>
+    <string name="confirmgobackdialog_message">Etes-vous sûr de vouloir recommencer cette réponse? Ceci supprimera la réponse existante.</string>
+    <string name="confirmgobackdialog_btn_confirm">Retour à la question précédente</string>
+
+    <!--
+    *********************************************
+    * ConfirmRemoveAnswerDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmremoveanswer_title">Supprimer la réponse</string>
+    <string name="confirmremoveanswer_blurb">Êtes-vous sûr de vouloir supprimer cette réponse</string>
+
+    <!--
+    *********************************************
+    * ConfirmSkipQuestionDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmskipquestion_title">Sauter cette question?</string>
+    <string name="confirmskipquestion_blurb">Etes-vous sûr de vouloir sauter cette question?</string>
+
+    <!--
+    ***************************
+    * ConsentActivity strings *
+    ***************************
+    -->
+    <string name="consent_question_failed">Désolé, relisez l\'information sur le consentement</string>
+    <string name="consent_complete">Consentement complété</string>
+    <string name="consent_additional_complete">Consentement supplémentaire complété</string>
+
+    <!--
+    ****************************************
+    * ConsentCheckQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="consentcheckquestion_error_please_select">Sélectionnez une réponse</string>
+    <string name="consentcheckquestion_error_incorrect">Désolé, ce n\'est pas correct</string>
+
+    <!--
+    **********************************
+    * ConsentConfirmFragment strings *
+    **********************************
+    -->
+    <string name="consentconfirm_title">Confirmer le consentement</string>
+    <string name="consentconfirm_blurb">Etes-vous sûr de vouloir participer?</string>
+    <string name="consentconfirm_blurb_extra_consent">Etes-vous sûr de vouloir que votre interlocuteur participe?</string>
+
+    <!--
+    ****************************************
+    * ConsentExtraRelationFragment strings *
+    ****************************************
+    -->
+    <string name="consentextrarelation_title">Quelle est votre relation avec votre interlocuteur?</string>
+    <string name="consentextrarelation_input_helper">Tapez ou faites un enregistrement audio de votre réponse</string>
+
+    <!--
+    ***********************************
+    * ConsentPreCheckFragment strings *
+    ***********************************
+    -->
+    <string name="consentprecheck_title">Avant de commencer…</string>
+    <string name="consentprecheck_subtitle_make_sure">Soyez sûr que:</string>
+    <string name="consentprecheck_make_sure_item_1">Vous êtes dans un endroit calme</string>
+    <string name="consentprecheck_make_sure_item_2">Votre interlocuteur est à l\'aise</string>
+    <string name="consentprecheck_make_sure_item_3">Vous êtes dans un endroit privé</string>
+    <string name="consentprecheck_subtitle_dont_forget">N\'oubliez pas de:</string>
+    <string name="consentprecheck_dont_forget_item_1">Essayer l\'option Parole-Texte pour recueillir les réponses de votre interlocuteur</string>
+    <string name="consentprecheck_btn_add">Ajouter un interlocuteur</string>
+
+    <!--
+    *****************************************
+    * ConsentRespondentInfoFragment strings *
+    *****************************************
+    -->
+    <string name="consent_respondent_info_title">Information sur votre interlocuteur</string>
+    <string name="consent_respondent_info_heading">Qui est votre interlocuteur?</string>
+    <string name="consent_respondent_info_age_question">Quel âge a votre interlocuteur?</string>
+    <string name="consent_respondent_info_age_question_with_age">Quel âge a votre interlocuteur? %d</string>
+    <string name="consent_respondent_info_age_desc">Sélectionnez l\'âge de votre interlocuteur dans le menu déroulant</string>
+    <string name="consent_respondent_info_question_additional_consent">Est ce que votre interlocuteur nécessite un consentement supplémentaire?</string>
+    <string name="consent_respondent_info_help_additional_consent">Votre interlocuteur nécessite un consentement supplémentaire si:\n\n• Il n\'a pas atteint l\'âge légal de la majorité du pays (reconnu comme adulte)\n• Il a un handicap qui l\'empêche de donner son consentement exclusif</string>
+    <string name="consent_respondent_info_question_beneficiary">Votre interlocuteur est-il bénéficiaire de l'équipe?</string>
+    <string name="consent_respondent_info_help_beneficiary">Votre interlocuteur est un \"bénéficiaire\" si l\'une des conditions suivantes s\'applique:\n\n• Lui ou un membre de sa famille immédiate a reçu une distribution d\'espèces et de l\'assistance bon ou toute autre forme d\'aide de la part de l'équipe lors de la dernière année civile\n• Il a directement bénéficié, ou participé à, tout autre développement ou programmes humanitaires dirigé par l'équipe lors de la dernière année civile</string>
+    <string name="consent_respondent_info_question_gender">Quel est le genre de votre répondant?</string>
+    <string name="consent_respondent_info_help_gender">Votre interlocuteur peut choisir "autre" genre si l\'un des cas suivants s\'applique:\n\n• Il fait parti d\'un \"troisième genre\" reconnu dans son pays\n• Il ne s\'identifie ni comme un \"homme\" ou \"femme\"\n• Il préfère ne pas déclarer leur genre dans le cadre de leur réponse à l\'entretien.</string>
+    <string name="consent_respondent_info_error_incomplete">Répondez à toutes les questions</string>
+
+    <!--
+    **********************************
+    * ConsentWrittenFragment strings *
+    **********************************
+    -->
+    <string name="consentwritten_title">Le consentement à l\'entretien</string>
+    <string name="consentwritten_about">Cette section est sur le stockage des données et la vie privée</string>
+    <string name="consentwritten_subheading">Expliquez à votre interlocuteur:</string>
+    <string name="consentwritten_text_1"><![CDATA[1. Je vais vous poser des questions à propos de votre expérience dans la situation actuelle. Votre participation à cette entretien est volontaire. Si à tout moment vous souhaitez arrêter l\'entretien, vous pouvez le faire.\n\n
+2. J\'enregistrerai vos réponses, afin que nous puissions les examiner plus tard plus en détail. L\'enregistrement va créer du texte - nous n\'enregistrerons pas de fichier audio de votre voix. Rien de ce que vous me direz ne sera personnellement attribuable à vous pour tous ceux qui verront vos réponses.\n\n
+3. Je vais aussi demander votre consentement à la fin de cet entretien, pour confirmer que vous êtes à l\'aise avec le fait que je partage les enregistrements audio et les textes que nous enregistrons.\n\n
+4. Les données que nous enregistrons et capturons seront partagées avec le personnel de l'équipe, de façon anonyme, pour nous aider à mieux comprendre comment nous pouvons être plus utiles et répondre à vos besoins et ceux de votre communauté.\n\n
+5. Étant donné que les données recueillies seront totalement anonymes, une fois qu\'il est présenté à la fin de l\'entretien, il ne peut pas être spécifiquement récupéré ou supprimé. Je vais vous demander le consentement à nouveau avant de soumettre les données enregistrées.]]>
+</string>
+    <string name="consentwritten_text_2"><![CDATA[6. Vos réponses seront conservées en ligne, de manière sécurisée - elles ne seront pas partagées ou accessibles publiquement. Vos réponses seront confidentielles.\n\n
+7. Si vous me signalez certaines informations sensibles, telles que les incidents de préjudice à vous-même ou d\'autres, je devrai peut-être faire rapport pour une enquête plus approfondie, ou vous référer à des endroits où vous pouvez accéder à des services et du soutien, si vous le souhaitez.\n\n
+8. Si vous divulguez certaines actions contraires à l\'éthique ou illégales à l'équipe ou à un membre du personnel de l\'organisation participante, je devrai peut-être partager ces informations à des fins d\'enquête et de revue.\n\n
+Si donner son consentement au nom de quelqu\'un d\'autre, s\'il vous plaît expliquer à votre répondant:\n\n
+9. Vous consentez aux déclarations si dessus au nom de votre enfant mineur, ou en votre qualité de fournisseur de soins pour la personne à interrogée si mentalement ou physiquement handicapé.]]>
+</string>
+    <string name="consentwritten_btn_answer_question">Répondre à la question</string>
+
+    <!--
+    *************************************
+    * InterviewCompleteFragment strings *
+    *************************************
+    -->
+    <string name="interviewcomplete_title">Entretien complet</string>
+    <string name="interviewcomplete_blurb">Votre entretien est en cours de synchronisation. Vous pouvez quitter écran et il continuera la synchronisation en arrière-plan.</string>
+
+    <!--
+    ********************************************
+    * InterviewEnumeratorNotesFragment strings *
+    ********************************************
+    -->
+    <string name="interviewenumeratornotes_title">Notes d\'entretien</string>
+    <string name="interviewenumeratornotes_heading">Entrez vos notes</string>
+    <string name="interviewenumeratornotes_input_hint">Note</string>
+    <string name="interviewenumeratornotes_input_helper">Ajoutez une réflexion ou toute information supplémentaire que vous souhaitez capturer de l\'entretien</string>
+    <string name="interviewenumeratornotes_btn_add">Ajouter une note</string>
+
+    <!--
+    *********************************
+    * InterviewListActivity strings *
+    *********************************
+    -->
+    <string name="interviewlist_item_label_new">Nouveau</string>
+    <plurals name="interviewlist_item_assigned_interviews">
+        <item quantity="one">%d entretien assigné</item>
+        <item quantity="other">%d entretiens assignés</item>
+    </plurals>
+    <plurals name="interviews_item_questions_count">
+        <item quantity="one">%d question</item>
+        <item quantity="other">%d questions</item>
+    </plurals>
+    <plurals name="interviewlist_item_completed_interviews">
+        <item quantity="one">%d entretien terminé</item>
+        <item quantity="other">%d entretiens terminés</item>
+    </plurals>
+
+    <!--
+    ****************************************
+    * InterviewNewQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="interviewnewquestion_title">Entrez votre question</string>
+    <string name="interviewnewquestion_input_hint">Question</string>
+    <string name="interviewnewquestion_input_helper">Tapez ou utilisez votre voix pour saisir votre question</string>
+
+    <!--
+    *************************************
+    * InterviewOverviewFragment strings *
+    *************************************
+    -->
+    <string name="interviewoverview_title">Vue d\'ensemble de l\'entretien</string>
+    <plurals name="interviewoverview_description">
+        <item quantity="one">%1$d Questions, %2$d Ignorée</item>
+        <item quantity="other">%1$d Questions, %2$d Ignorées</item>
+    </plurals>
+    <string name="interviewoverview_btn_cancel">Annuler l\'entretien</string>
+    <string name="interviewoverview_btn_confirm">Confirmer les réponses</string>
+    <string name="interviewoverview_item_label_skipped">Ignoré</string>
+    <string name="interviewoverview_item_label_flagged">Signalé</string>
+    <string name="interviewoverview_item_label_probing">Approfondissement</string>
+    <string name="interviewoverview_item_label_starred">Epinglé</string>
+    <string name="interviewoverview_item_btn_flag">Signaler cette question</string>
+    <string name="interviewoverview_item_btn_star">Epingler cette question</string>
+    <string name="interviewoverview_item_btn_retake">Refaire cette question</string>
+    <string name="interviewoverview_item_btn_remove">Supprimer cette réponse</string>
+
+    <!--
+    ********************************
+    * LanguagePackActivity strings *
+    ********************************
+    -->
+    <string name="languagepack_title">Les packs linguistiques</string>
+    <string name="languagepack_blurb">Avant de commencer, téléchargez les packs linguistiques ci-dessous dont vous aurez besoin pour mener vos entretiens. Les packs linguistiques vous permettront de capturer la voix de votre interlocuteur pour leurs réponses à l\'aide de la fonctionnalité  Parole-Texte de Google Voice .</string>
+    <string name="languagepack_subtitle">Packs linguistiques:</string>
+    <string name="languagepack_item_btn_test">Tester</string>
+    <string name="languagepack_item_btn_manage">Préférences</string>
+
+    <!--
+    *************************
+    * LoginActivity strings *
+    *************************
+    -->
+    <string name="login_title">Connexion</string>
+    <string name="login_email_hint">E-mail</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="login_btn_login">Se connecter</string>
+    <string name="login_btn_forgot_password">Mot de passe oublié?</string>
+    <string name="loginactivity_snackbar_auth_failed">L\'authentification a échoué, vérifiez votre email et votre mot de passe ou inscrivez vous</string>
+
+    <!--
+    ******************************
+    * OnboardingActivity strings *
+    ******************************
+    -->
+    <string name="onboarding_option_item_close">Quitter</string>
+
+    <!--
+    **********************************
+    * OnboardingItemFragment strings *
+    **********************************
+    -->
+    <string name="onboarding_fragment_item_1_title">Speech-to-Text</string>
+    <string name="onboarding_fragment_item_1_blurb">Speech-to-Text vous permet de capturer tout ce
+        que dit votre interlocuteur sans avoir à taper quoi que ce soit ou à oublier ce qu\'il
+        dit.\n\nCette fonction ne conservera pas d\'enregistrement audio, mais créera du texte sur
+        l\'écran de votre application.\n\nVous pouvez utiliser cette fonction partout où vous voyez
+        l\'icône du microphone en appuyant sur l\'icône et en parlant dans le téléphone.\nVeillez à
+        tenir le téléphone près de la personne interrogée lorsqu\'elle parle.\n\nVous pouvez
+        corriger toute erreur en appuyant sur le texte et en tapant au clavier.
+    </string>
+    <string name="onboarding_fragment_item_2_title">Ajouter une question (Approfondissement)</string>
+    <string name="onboarding_fragment_item_2_blurb">Vous pouvez poser une question de suivi à votre
+        interlocuteur pour mieux comprendre sa réponse en ajoutant une question
+        d\'approfondissement.\n\nAjoutez une question d\'approfondissement en appuyant sur l\'icône
+        + et en la sélectionnant parmi une liste de questions existantes ou rédigez-en une nouvelle
+        avant de demander à votre répondant de répondre.\n\nSi vous souhaitez poser une question
+        d\'approfondissement pour la question 1, après que la personne interrogée ait répondu à la
+        question 1, sélectionnez \"Suivant\". Sur l\'écran affichant la question 2, ajoutez la
+        question d\'approfondissement liée à la question 1.
+    </string>
+    <string name="onboarding_fragment_item_3_title">Signaler un problème et épingler une question</string>
+    <string name="onboarding_fragment_item_3_blurb">Si vous pensez qu\'une personne interrogée a
+        révélé une préoccupation concernant sa protection ou sa sécurité, vous pouvez signaler sa
+        réponse pour le faire savoir aux chercheurs.\n\nPour ce faire, appuyez sur l\'icône drapeau
+        en haut de l\'écran.\n\nSi vous pensez qu\'une personne interrogée a dit quelque chose de
+        très perspicace qui serait utile et intéressant pour l\'analyse des données, vous pouvez
+        épingler la réponse pour en informer les chercheurs.n\nPour ce faire, appuyez sur l\'icône
+        étoile en haut de l\'écran.\n\nVous pouvez uniquement signaler et épingler les questions à
+        réponse ouverte. Vous ne pouvez pas signaler et épingler les réponses aux questions à code
+        multiple ou à code unique.
+    </string>
+    <string name="onboarding_fragment_item_4_title">Récapitulatif de l\'entretien</string>
+    <string name="onboarding_fragment_item_4_blurb">Avant de soumettre l\'entretien, vous verrez un
+        écran avec un récapitulatif de toutes les questions. On vous montrera les questions que vous
+        avez signalées, épinglées, sautées et les questions d\'approfondissement que vous avez
+        ajoutées.\n\nSi votre répondant ne se sent pas à l\'aise avec sa réponse, vous pouvez
+        reposer la question ou supprimer la réponse à partir de cet écran. Vous ne pouvez pas voir
+        la réponse originale.\n\nVous pouvez signaler ou épingler une réponse sur cet écran si vous
+        avez oublié de le faire pendant l\'entretien.
+    </string>
+    <string name="onboarding_fragment_item_5_title">Notes d\'entretien</string>
+    <string name="onboarding_fragment_item_5_blurb">À la fin d\'une interview, vous pouvez ajouter
+        des réflexions ou des informations supplémentaires sur l\'interview que vous souhaitez
+        partager avec les chercheurs.\n\nPour ce faire, appuyez sur l\'icône Notes d\'entretien en
+        bas de l\'écran pour ajouter une note.\n\nVous pouvez ajouter la note en utilisant la
+        fonction Speech-to-Text ou en la tapant.
+    </string>
+
+    <!--
+    ***************************
+    * PinCodeActivity strings *
+    ***************************
+    -->
+    <string name="pincode_title_create">Créez votre code PIN à 6 chiffres</string>
+    <string name="pincode_title_reset">Réinitialisez votre code PIN à 6 chiffres</string>
+    <string name="pincode_title_validate_existing">Validez votre code PIN à 6 chiffres</string>
+    <string name="pincode_title_validate_new">Validez votre nouveau code PIN à 6 chiffres</string>
+    <string name="pincode_title_verification">Entrez votre code PIN</string>
+    <string name="pincode_blurb_create">Pour protéger la sécurité de votre application, créez un code PIN à 6 chiffres. Ce code sera utilisé pour accéder à VoiceApp au cours de cette session. Lorsque vous vous déconnecterez de l\'application, vous devrez créer un nouveau code PIN.</string>
+    <string name="pincode_blurb_verify">Pour protéger la sécurité de votre application, entrez votre code PIN à 6 chiffres.</string>
+    <string name="pincode_enter_pin">Entrez votre code PIN:</string>
+    <string name="pincode_btn_forgot">Vous avez oublié votre code PIN?</string>
+    <string name="pincode_pin_created">Code PIN Créé</string>
+    <string name="pincode_message_created">Code PIN Créé</string>
+    <string name="pincode_message_reset">Code PIN réinitialisé</string>
+    <string name="pincode_message_changed">Code PIN changé</string>
+    <string name="pincode_message_success">Code PIN correct</string>
+    <string name="pincode_message_invalid">Code PIN invalide, tentative %1$s / %2$d</string>
+    <string name="pincode_snackbar_verification_failure">Les codes PIN ne correspondent pas</string>
+
+    <!--
+    *******************************
+    * ProjectListActivity strings *
+    *******************************
+    -->
+    <string name="projectlist_title">Vos projets</string>
+    <plurals name="projectlist_item_interviewcount">
+        <item quantity="one">%d entretien</item>
+        <item quantity="other">%d entretiens</item>
+    </plurals>
+    <plurals name="projectlist_project_count">
+        <item quantity="one">%d projet actif</item>
+        <item quantity="other">%d projets actifs</item>
+    </plurals>
+    <string name="projectlist_error_no_projects">Aucun Projet</string>
+
+    <!--
+    *********************************
+    * ResetPasswordActivity strings *
+    *********************************
+    -->
+    <string name="resetpassword_title">Mot de passe oublié?</string>
+    <string name="resetpassword_blurb">Nous avons juste besoin de l\'e-mail associé à ce compte pour vous envoyer des instructions de réinitialisation de mot de passe.</string>
+    <string name="resetpassword_btn_reset_password">Réinitialiser le mot de passe</string>
+    <string name="resetpassword_message_success">Nous vous avons envoyé des instructions, vérifiez votre boite mail</string>
+    <string name="resetpassword_message_error">Aucun compte existant cette adresse e-mail</string>
+
+    <!--
+    ****************************
+    * ResetPinActivity strings *
+    ****************************
+    -->
+    <string name="resetpin_btn_reset">Réinitialiser votre code PIN</string>
+
+    <!--
+    ****************************
+    * SettingsActivity strings *
+    ****************************
+    -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_item_reset_pin">Réinitialiser votre code PIN</string>
+    <string name="settings_item_language_packs">Les packs linguistiques</string>
+    <string name="settings_item_guide">Guide</string>
+    <string name="settings_item_logout">Se déconnecter</string>
+    <string name="settings_version">Version %s</string>
+
+    <!--
+    *********************************
+    * SkipLogicInfoFragment strings *
+    *********************************
+    -->
+    <string name="skiplogicinfo_fragment_title">Ce qu\'il faut savoir avant de commencer</string>
+    <string name="skiplogicinfo_fragment_blurb">Cet entretien comprend quelques questions de logique de saut.\n\nVous n\'avez rien à faire pour que cela fonctionne, posez simplement les questions et vous serez dirigé vers le bon endroit de l\'entretien en fonction des réponses de votre interlocuteur.\n\nPour les entretiens avec logique de saut, vous ne pourrez pas supprimer des réponses spécifiques ou reprendre des questions à la fin de l\'entretien. Dans la vue d\'ensemble de l\'entretien, vous ne verrez que les questions posées lors de l\'entretien.</string>
+    <string name="skiplogicinfo_fragment_btn_start">Démarrer</string>
+
+    <!--
+    ***********************************
+    * TemplatesDialogFragment strings *
+    ***********************************
+    -->
+    <string name="templatesdialog_title">Choisissez une question à ajouter</string>
+    <string name="templatesdialog_btn_add">Ajouter une question</string>
+
+    <!--
+    ****************************
+    * WhatsNewActivity strings *
+    ****************************
+    -->
+    <string name="whatsnew_heading">Quoi de neuf?</string>
+    <string name="whatsnew_subtitle">Dans cette nouvelle version de l\'application VoiceApp, nous avons:</string>
+    <string name="whatsnew_changelog">• VoiceApp supporte désormais la logique de saut\n• Les notes de l\'enquêteur peuvent maintenant être ajoutées avant de soumettre une interview.</string>
+    <string name="whatsnew_btn_done">@string/done</string>
+
+    <!-- Widget strings -->
+    <string name="expandcollapseindicator_contentdescription_collapsed">Réduit</string>
+    <string name="expandcollapseindicator_contentdescription_expanded">Élargit</string>
+</resources>

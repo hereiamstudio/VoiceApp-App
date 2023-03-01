@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding"
+            android:textAlignment="viewStart">
+
+            <TextView
+                android:id="@+id/titleText"
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:text="@string/interviewoverview_title" />
+
+            <TextView
+                android:id="@+id/descText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"
+                android:textAlignment="inherit"
+                tools:text="10 Questions, 4 Skipped" />
+
+            <TextView
+                android:id="@+id/cancelButton"
+                style="@style/Button.TextButton"
+                android:layout_marginStart="-8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interviewoverview_btn_cancel" />
+
+            <LinearLayout
+                android:id="@+id/questionOverviewHolder"
+                android:layout_marginTop="@dimen/default_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/Divider.BottomBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/small_padding">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/default_padding"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/colorAccent"
+            app:strokeColor="@color/colorAccent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComments"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/default_padding"
+            app:icon="@drawable/ic_message"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/colorAccent"
+            app:strokeColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnConfirmAnswers"
+            style="@style/Button"
+            android:text="@string/interviewoverview_btn_confirm" />
+    </LinearLayout>
+
+</LinearLayout>
+

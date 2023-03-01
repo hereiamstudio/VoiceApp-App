@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        android:textAlignment="viewStart">
+
+        <TextView
+            android:id="@+id/pinTitle"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="inherit"
+            tools:text="Enter your PIN" />
+
+        <TextView
+            android:id="@+id/pinText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_padding"
+            android:textAlignment="inherit"
+            tools:text="To protect the security of your app, please enter your 6-digit PIN code." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="inherit"
+            android:text="@string/pincode_enter_pin"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pinChar1"
+                style="@style/PinPasswordText"
+                android:nextFocusRight="@id/pinChar2"
+                android:nextFocusDown="@id/pinChar2"
+                android:importantForAutofill="no"
+                android:tag="1"
+                tools:text="1" />
+
+            <EditText
+                android:id="@+id/pinChar2"
+                style="@style/PinPasswordText"
+                android:nextFocusRight="@id/pinChar3"
+                android:nextFocusDown="@id/pinChar3"
+                android:importantForAutofill="no"
+                android:tag="2"
+                tools:text="1" />
+
+            <EditText
+                android:id="@+id/pinChar3"
+                style="@style/PinPasswordText"
+                android:nextFocusRight="@id/pinChar4"
+                android:nextFocusDown="@id/pinChar4"
+                android:importantForAutofill="no"
+                android:tag="3"
+                tools:text="1" />
+
+            <EditText
+                android:id="@+id/pinChar4"
+                style="@style/PinPasswordText"
+                android:nextFocusRight="@id/pinChar5"
+                android:nextFocusDown="@id/pinChar5"
+                android:importantForAutofill="no"
+                android:tag="4"
+                tools:text="1" />
+
+            <EditText
+                android:id="@+id/pinChar5"
+                style="@style/PinPasswordText"
+                android:nextFocusRight="@id/pinChar6"
+                android:nextFocusDown="@id/pinChar6"
+                android:importantForAutofill="no"
+                android:tag="5"
+                tools:text="1" />
+
+            <EditText
+                android:id="@+id/pinChar6"
+                style="@style/PinPasswordText"
+                android:importantForAutofill="no"
+                android:tag="6"
+                tools:text="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_forgot_pin"
+            style="@style/Button.TextButton"
+            android:layout_marginTop="@dimen/default_padding"
+            android:gravity="start"
+            android:text="@string/pincode_btn_forgot"
+            android:visibility="gone"
+            android:textAlignment="inherit"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pinSuccessScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        android:textAlignment="viewStart"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/large_padding"
+            android:src="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/pinSuccessTitle"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pincode_pin_created"
+            android:textAlignment="inherit" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

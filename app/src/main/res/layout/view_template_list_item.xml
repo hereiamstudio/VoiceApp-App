@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/large_padding"
+    android:paddingBottom="@dimen/large_padding"
+    android:paddingStart="@dimen/default_padding"
+    android:paddingEnd="@dimen/default_padding"
+    android:textAlignment="viewStart"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/checkbox_background_template"
+    android:textColor="@color/button_foreground_color_template"
+    android:textSize="@dimen/text_medium"
+    android:button="@drawable/ic_circle_add_left_pad"
+    android:buttonTint="@color/button_foreground_color_template"
+    android:clickable="true"
+    android:focusable="true"
+    tools:checked="true"
+    tools:text="How were things before the crisis?" />

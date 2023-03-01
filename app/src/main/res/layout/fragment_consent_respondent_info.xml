@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding"
+            android:textAlignment="viewStart">
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/consent_respondent_info_heading"
+                android:textAlignment="inherit" />
+
+            <Button
+                android:id="@+id/btn_age_dropdown"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_down"
+                android:drawableTint="@color/colorAccent"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/default_padding"
+                android:text="@string/consent_respondent_info_age_question"
+                android:textAlignment="inherit"
+                android:textColor="@color/white"
+                app:strokeColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_padding"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:gravity="start"
+                android:textAlignment="inherit"
+                android:text="@string/consent_respondent_info_age_desc" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider.BottomBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <LinearLayout
+                android:id="@+id/questionHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_continue"
+                style="@style/Button"
+                android:text="@string/cont" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

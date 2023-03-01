@@ -1,0 +1,69 @@
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_default">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/project_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:titleTextColor="@color/toolbar_text_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_padding"
+            android:paddingBottom="@dimen/default_padding">
+
+            <ImageButton
+                android:id="@+id/buttonSync"
+                android:background="@null"
+                android:padding="@dimen/small_padding"
+                android:tint="@color/white"
+                android:layout_gravity="start|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sync" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextTitle.NoMargin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:textAlignment="viewStart"
+                    android:text="@string/projectlist_title" />
+
+                <ImageButton
+                    android:id="@+id/buttonSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:minWidth="?minTouchTargetSize"
+                    android:minHeight="?minTouchTargetSize"
+                    android:background="@null"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_settings" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/projectCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:textColor="@android:color/white"
+                tools:text="3 active projects" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

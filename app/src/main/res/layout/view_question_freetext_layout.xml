@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question1Text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Does your respondent require additional consent?" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditTextInputLayoutStyle"
+        android:id="@+id/freeTextAnswerInput"
+        android:textAlignment="viewStart"
+        android:hint="@string/answer"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_mic"
+        app:endIconTint="@android:color/white"
+        app:helperText="@string/help_free_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText"
+            android:id="@+id/freeTextAnswer"
+            android:paddingStart="@dimen/default_padding"
+            android:paddingEnd="@dimen/large_padding"
+            android:minLines="1"
+            android:inputType="text|textMultiLine"
+            android:textAlignment="inherit" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:textAlignment="viewStart">
+    
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="inherit">
+
+        <TextView
+            android:id="@+id/question1Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:textAlignment="inherit"
+            tools:text="Does your respondent require additional consent?" />
+        
+        <ImageView
+            android:id="@+id/imgHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_help"
+            android:visibility="gone"
+            app:tint="@color/checkbox_selected"
+            tools:visibility="visible" />
+
+        <com.voiceapp.widgets.ExpandCollapseIndicator
+            android:id="@+id/expandCollapseIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_expand_more"
+            android:visibility="gone"
+            app:tint="@color/checkbox_selected"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/BodyText"
+        android:id="@+id/txtHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:padding="@dimen/default_padding"
+        android:background="@color/orange_10"
+        android:textColor="@color/text_dark"
+        android:visibility="gone"
+        android:textAlignment="inherit"
+        tools:text="Some example text here"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/questionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/first"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_padding"
+        android:paddingBottom="@dimen/default_padding"
+        android:textAlignment="viewStart" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/project_list_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Larger"
+                android:id="@+id/cardLanguageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/card_text"
+                android:textSize="18sp"
+                tools:text="English: British" />
+
+            <TextView
+                android:id="@+id/testButton"
+                style="@style/Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginBottom="-8dp"
+                android:text="@string/languagepack_item_btn_test"
+                android:textColor="@color/colorAccent"
+                android:background="?selectableItemBackground"
+                app:drawableStartCompat="@drawable/ic_mic"
+                app:drawableTint="@color/colorAccent"
+                app:strokeColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cardLanguageStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/languagepack_item_btn_manage"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_medium"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="@dimen/small_padding"
+            app:drawableStartCompat="@drawable/ic_settings_applications"
+            app:drawableTint="@color/colorAccent" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

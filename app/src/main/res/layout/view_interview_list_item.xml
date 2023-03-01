@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/interview_list_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/large_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:textAlignment="viewStart">
+
+            <TextView
+                android:id="@+id/newIcon"
+                style="@style/TextIcon"
+                android:text="@string/interviewlist_item_label_new"
+                android:layout_marginBottom="@dimen/vsmall_padding"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_interview_issue"
+                style="@style/CardTextTitle.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:textColor="@color/card_text"
+                android:textAlignment="viewStart"
+                tools:text="Too much Typhoon WinToo much Typhoon Wind " />
+
+            <TextView
+                android:id="@+id/tv_interview_description"
+                style="@style/CardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                tools:text="turn off fans" />
+
+            <TextView
+                android:id="@+id/tv_interviews_completed"
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:drawablePadding="@dimen/small_padding"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_check_small"
+                app:drawableTint="@color/check_success"
+                tools:text="4 interviews completed"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_questions_count"
+                style="@style/Text.Secondary"
+                android:textAlignment="inherit"
+                tools:text="10 Questions" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_times_taken_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/card_text"
+                android:visibility="gone"
+                tools:text="111 times taken" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

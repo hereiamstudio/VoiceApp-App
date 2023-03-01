@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtStepNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:textAlignment="viewStart"
+        tools:text="Step 1/4" />
+
+    <View
+        style="@style/Divider"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding"
+            android:textAlignment="viewStart">
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:text="@string/consentwritten_title" />
+
+            <TextView
+                style="@style/BodyText"
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:textAlignment="inherit"
+                android:text="@string/consentwritten_about" />
+
+            <View
+                style="@style/Divider" />
+
+            <TextView
+                style="@style/DescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_padding"
+                android:layout_marginBottom="@dimen/large_padding"
+                android:textAlignment="inherit"
+                android:text="@string/consentwritten_subheading" />
+
+            <TextView
+                style="@style/BodyText"
+                android:id="@+id/consentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_marginEnd="@dimen/xlarge_padding"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:textAlignment="inherit"
+                tools:text="@string/consentwritten_text_2" />
+
+            <Button
+                android:id="@+id/btn_answer_questions"
+                style="@style/Button"
+                android:text="@string/consentwritten_btn_answer_question" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

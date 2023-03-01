@@ -1,0 +1,57 @@
+name: Production release (Firebase)
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-test-and-deploy:
+    name: Build, test and deploy to production (Firebase)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+      - name: Write Firebase Service Credentials File
+        run: |
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS" >> $GITHUB_ENV
+          echo $SERVICE_ACCOUNT_TOKEN_BASE64 | base64 --decode > $GOOGLE_APPLICATION_CREDENTIALS
+        shell: bash
+        env:
+          SERVICE_ACCOUNT_TOKEN_BASE64: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AUTH_BASE64 }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account-token.json
+      - name: Write Google Services files
+        run: |
+          mkdir -p $DEBUG_PATH
+          mkdir -p $STAGING_PATH
+          mkdir -p $RELEASE_PATH
+          echo ${{ secrets.DIGITAL_RGA_GOOGLE_SERVICES_DEBUG }} | base64 --decode > ${DEBUG_PATH}/google-services.json
+          echo ${{ secrets.DIGITAL_RGA_GOOGLE_SERVICES_STAGING }} | base64 --decode > ${STAGING_PATH}/google-services.json
+          echo ${{ secrets.DIGITAL_RGA_GOOGLE_SERVICES_RELEASE }} | base64 --decode > ${RELEASE_PATH}/google-services.json
+        shell: bash
+        env:
+          DEBUG_PATH: app/src/debug
+          STAGING_PATH: app/src/staging
+          RELEASE_PATH: app/src/release
+      - name: Write keystore file
+        run: |
+          echo "KEYSTORE_FILE=$KEYSTORE_FILE" >> $GITHUB_ENV
+          echo $KEYSTORE_BASE64 | base64 --decode > $KEYSTORE_FILE
+        shell: bash
+        env:
+          KEYSTORE_BASE64: ${{ secrets.DIGITAL_RGA_KEYSTORE_PRODUCTION_BASE64 }}
+          KEYSTORE_FILE: ${{ runner.temp }}/release.keystore
+      - name: Build, test and deploy
+        run: >
+          ./gradlew
+          -PvoiceappPublicKeyProduction=${{ secrets.DIGITAL_RGA_PUBLIC_KEY_PRODUCTION }}
+          -PvoiceappStoreFile=$KEYSTORE_FILE
+          -PvoiceappStorePassword=${{ secrets.DIGITAL_RGA_KEYSTORE_PASSWORD_PRODUCTION }}
+          -PvoiceappKeyAlias=${{ secrets.DIGITAL_RGA_KEYSTORE_KEY_ALIAS_PRODUCTION }}
+          -PvoiceappKeyPassword=${{ secrets.DIGITAL_RGA_KEYSTORE_KEY_PASSWORD_PRODUCTION }}
+          clean
+          allReleaseUnitTests
+          :app:assembleRelease
+          :app:appDistributionUploadRelease

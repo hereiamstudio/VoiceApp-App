@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VoiceApp</string>
+
+    <!--
+    ******************************
+    * General and common strings *
+    ******************************
+    -->
+    <string name="done">انتهى</string>
+    <string name="cont">أستمرار</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="next">التالي</string>
+    <string name="cancel">الغاء</string>
+    <string name="answer">اجابة </string>
+    <string name="required">مطلوب</string>
+    <string name="gender_male">ذكر</string>
+    <string name="gender_female">أنثى</string>
+    <string name="gender_other">أخرى</string>
+
+    <string name="consent_step">%2$d/%1$d خطوة </string>
+    <string name="help_free_text">اكتب أو سجل إجابة صاحب الاستبيان عن طريق صوته</string>
+
+    <!--
+    *************************************
+    * AddQuestionDialogFragment strings *
+    *************************************
+    -->
+    <string name="addquestiondialog_title">أضف سؤالاً</string>
+    <string name="addquestiondialog_blurb">قم بإنشاء سؤال جديد أو إضف سؤال موجود من القائمة</string>
+    <string name="addquestiondialog_btn_create">إنشاء جديد</string>
+    <string name="addquestiondialog_btn_select">إختيار من القائمة</string>
+
+    <!--
+    ********************************************
+    * AddQuestionWarningDialogFragment strings *
+    ********************************************
+    -->
+    <string name="addquestionwarningdialog_title">احذر!</string>
+    <string name="addquestionwarningdialog_blurb">اذا قمت بالمتابعه فإن الردود التي تم إدخالها سابقاً سيتم حذفها. إذا كنت تريد إضافة تحقق لهذا السؤال اختر إلغاء ثم التالي. إذا كنت تريد تجاهل هذه الاستجابة وإضافة تحقق للسؤال السابق، اختر متابعة.</string>
+
+    <!--
+    **********************************************
+    * ConfirmExitInterviewDialogFragment strings *
+    **********************************************
+    -->
+    <string name="confirmexitinterview_title">الخروج من الاستبيان؟</string>
+    <string name="confirmexitinterview_blurb">هل انت متأكد انك تريد الخروج من الاستبيان؟</string>
+
+    <!--
+    ***************************************
+    * ConfirmGoBackDialogFragment strings *
+    ***************************************
+    -->
+    <string name="confirmgobackdialog_title">العودة الى الخلف</string>
+    <string name="confirmgobackdialog_message">هل أنت متأكد أنك تريد إعادة تسجيل هذه الاجابة؟ سيؤدي هذا إلى حذف الاجابة السابقة</string>
+    <string name="confirmgobackdialog_btn_confirm">العودة الى السؤال السابق</string>
+
+    <!--
+    *********************************************
+    * ConfirmRemoveAnswerDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmremoveanswer_title">ازالة الاجابة </string>
+    <string name="confirmremoveanswer_blurb">هل انت متأكد انك تريد ازالة هذه الاجابة؟</string>
+
+    <!--
+    *********************************************
+    * ConfirmSkipQuestionDialogFragment strings *
+    *********************************************
+    -->
+    <string name="confirmskipquestion_title">تخطي السؤال</string>
+    <string name="confirmskipquestion_blurb">هل أنت متأكد أنك تريد تجاهل السؤال؟</string>
+
+    <!--
+    ***************************
+    * ConsentActivity strings *
+    ***************************
+    -->
+    <string name="consent_question_failed">عذراً اعد قراءة بنود الموافقه</string>
+    <string name="consent_complete">تم اكتمال الموافقة</string>
+    <string name="consent_additional_complete">تم اكتمال الموافقة</string>
+
+    <!--
+    ****************************************
+    * ConsentCheckQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="consentcheckquestion_error_please_select">الرجاء تحديد إجابة </string>
+    <string name="consentcheckquestion_error_incorrect">آسف هذا ليس صحيحا</string>
+
+    <!--
+    **********************************
+    * ConsentConfirmFragment strings *
+    **********************************
+    -->
+    <string name="consentconfirm_title">تأكيد الموافقة المستنيرة</string>
+    <string name="consentconfirm_blurb">هل أنت متأكد أنك تريد المشاركة؟</string>
+    <string name="consentconfirm_blurb_extra_consent">هل أنت متأكد أنك تريد صاحب الاستبيان أن يشارك؟</string>
+
+    <!--
+    ****************************************
+    * ConsentExtraRelationFragment strings *
+    ****************************************
+    -->
+    <string name="consentextrarelation_title">ما هي علاقتك بصاحب الاستبيان؟</string>
+    <string name="consentextrarelation_input_helper">اكتب او سجل صوت اجابتك</string>
+
+    <!--
+    ***********************************
+    * ConsentPreCheckFragment strings *
+    ***********************************
+    -->
+    <string name="consentprecheck_title">قبل ان تبدأ</string>
+    <string name="consentprecheck_subtitle_make_sure">تأكد أنّ:</string>
+    <string name="consentprecheck_make_sure_item_1">انت في مكان هادئ </string>
+    <string name="consentprecheck_make_sure_item_2">صاحب الاستبيان يشعر بالراحة</string>
+    <string name="consentprecheck_make_sure_item_3">انت في مكان خاص</string>
+    <string name="consentprecheck_subtitle_dont_forget">لا تنسى أنّ:</string>
+    <string name="consentprecheck_dont_forget_item_1">جرب خاصية تحويل الصوت الى نص لتسجيل اجابات صاحب الاستبيان</string>
+    <string name="consentprecheck_btn_add">اضافة صاحب استبيان</string>
+
+    <!--
+    *****************************************
+    * ConsentRespondentInfoFragment strings *
+    *****************************************
+    -->
+    <string name="consent_respondent_info_title">معلومات صاحب الاستبيان</string>
+    <string name="consent_respondent_info_heading">من هو الذي ستجري معه الاستبيان؟</string>
+    <string name="consent_respondent_info_age_question">عمر صاحب الاستبيان؟</string>
+    <string name="consent_respondent_info_age_question_with_age">عمر صاحب الاستبيان؟ %d</string>
+    <string name="consent_respondent_info_age_desc">الرجاء تحديد عمر صاحب الاستبيان من قائمة الخيارات</string>
+    <string name="consent_respondent_info_question_additional_consent">هل يحتاج صاحب الاستبيان الى موافقات اضافية؟</string>
+    <string name="consent_respondent_info_help_additional_consent">يحتاج صاجب الاستبيان إلى موافقة إضافية إذا:\n\n• لم يبلغ سن الرشد القانوني للبلد (المعترف به كبالغين)\n• لديه إعاقة تمنعه من إعطاء موافقتهم الشخصية</string>
+    <string name="consent_respondent_info_question_beneficiary">هل صاحب الاستبيان من مستفيدي منظمة كير؟</string>
+    <string name="consent_respondent_info_help_beneficiary">يعتبر صاحب الاستبيان من مستفيدي منظمة كير إذا انطبق أي مما يلي:\n\n• تلقى هو او احد أفراد عائلاته المباشرين أي توزيع نقدي ومساعدات في شكل قسيمة قسائم نقدية أو أي شكل آخر من أشكال المساعدة خلال السنة الميلادية الماضية\n• لقد استفاد او شارك هو او احد افراد عائلته بشكل مباشر في أي برامج تنموية أو إنسانية أخرى مدعومة من قبل منظمة كير في السنة الميلادية الماضية</string>
+    <string name="consent_respondent_info_question_gender">ما هو جنس صاجب الاستبيان؟</string>
+    <string name="consent_respondent_info_help_gender">يمكن لصاحب الاستبيان اختيار أخرى إذا انطبق أي مما يلي:\n\n• هو جزء من اي مجموعات معرفة ك جنس ثالث ومعترف به في بلدهم\n• لا يقدر على التمييز بأنه ذكر أو أنثى\n• يفضل عدم تحديد جنسه كجزء من ردهم على المقابلة</string>
+    <string name="consent_respondent_info_error_incomplete">الرجاء الاجابة على كافة الاسئلة</string>
+
+    <!--
+    **********************************
+    * ConsentWrittenFragment strings *
+    **********************************
+    -->
+    <string name="consentwritten_title">الموافقة المستنيرة للاستبيان</string>
+    <string name="consentwritten_about">هذا القسم حول تخزين البيانات والخصوصية</string>
+    <string name="consentwritten_subheading">اشرح لصاحب الاستبيان</string>
+    <string name="consentwritten_text_1">
+        سأقوم بطرح عدة اسئلة عليك تتعلق بتجربتك في الوقت الحالي . علما بان مشاركتك بهذه المقابلة هو عمل تطوعي . اذا كنت تريد التوقف في اي وقت خلال المقابلة , يمكنك القيام بذلك\n\n
+        سأقوم بتسجيل الردود الخاصة بك ، حتى نتمكن من مراجعتها لاحقًا بشكل كامل. سوف بتم تحويل تسجيل صوتك لنص مكتوب - لن نقوم بحفظ ملف صوتي لك. لن يُنسب لك أي شيء تخبرني به شخصيًا من قبل أي شخص يرى ردودك\n\n
+        سأطلب أيضًا موافقتك في نهاية هذه المقابلة ، لتأكيد أنك تشعر بالارتياح لمشاركتي التسجيلات والنصوص التي تم تسجيلها\n\n
+        ستتم مشاركة البيانات التي نسجلها ونلتقطها مع موظفي منظمة كير ، بدون ذكرصاحبها ، لمساعدتنا على فهم أفضل لكيفية تقديم المساعدة والاستجابة لك ولاحتياجات مجتمعك\n\n
+        لأن البيانات التي تم جمعها ستكون مجهولة المصدر بشكل كامل ، بمجرد تقديمها في نهاية المقابلة ، لا يمكن استرجاعها أو حذفها. سأطلب منك الموافقة مرة أخرى قبل تقديم البيانات المسجلة.
+    </string>
+    <string name="consentwritten_text_2">
+        سيتم الاحتفاظ بردودك على الإنترنت بطريقة آمنة\سرية - لن يتم مشاركتها بشكل عام أو الوصول إليها. ستكون ردودك سرية.\n\n
+        \n\nإذا أبلغتني عن معلومات معينة حساسة ، مثل حوادث إيذاء لنفسك أو للآخرين ، فقد يُطلب مني الإبلاغ عنها لمزيد من التحقيق ، أو سأحيلك إلى أماكن تقديم خدمات يمكنك فيها الوصول إلى الدعم والخدمات الضرورية ، في حال رغبتك بذلك.
+        إذا كشفت عن بعض الإجراءات غير الأخلاقية أو غير القانونية من جانب منظمة كير أو موظفي المنظمة المقدمة للخدمات ، فقد يُطلب مني تصعيدها للتحقيق والمراجعة\n\n
+        في حالة تقديم الموافقة نيابة عن شخص آخر ، يرجى التوضيح للشخص الذي يجري معك المقابلة
+    </string>
+    <string name="consentwritten_btn_answer_question">اجابة السؤال</string>
+
+    <!--
+    *************************************
+    * InterviewCompleteFragment strings *
+    *************************************
+    -->
+    <string name="interviewcomplete_title">اتمام الاستبيان</string>
+    <string name="interviewcomplete_blurb">استبيانك قيد التنفيذ. يمكنك الانتقال من هذه الشاشة وسيستمرالتنفيذ في الخلفية</string>
+
+    <!--
+    ********************************************
+    * InterviewEnumeratorNotesFragment strings *
+    ********************************************
+    -->
+    <string name="interviewenumeratornotes_title">ملاحظات المقابلة</string>
+    <string name="interviewenumeratornotes_heading">أدخل ملاحظاتك</string>
+    <string name="interviewenumeratornotes_input_hint">ملاحظة</string>
+    <string name="interviewenumeratornotes_input_helper">قم بإضافة اي افكار أو معلومات إضافية تود التأكيد عليها من المقابلة</string>
+    <string name="interviewenumeratornotes_btn_add">إضافة ملاحظة</string>
+
+    <!--
+    *********************************
+    * InterviewListActivity strings *
+    *********************************
+    -->
+    <string name="interviewlist_item_label_new">جديد</string>
+    <plurals name="interviewlist_item_assigned_interviews">
+        <item quantity="zero">مقابلات %d</item>
+        <item quantity="one">مقابلة محددة %d</item>
+        <item quantity="two">مقابلتان محددة %d</item>
+        <item quantity="few">مقابلات محددات %d</item>
+        <item quantity="many">مقابلات %d</item>
+    </plurals>
+    <plurals name="interviews_item_questions_count">
+        <item quantity="zero">اسئلة%d</item>
+        <item quantity="one"> سؤال %d</item>
+        <item quantity="two">سؤالين%d</item>
+        <item quantity="few"> أسئلة %d </item>
+        <item quantity="many">اسئلة %d </item>
+    </plurals>
+    <plurals name="interviewlist_item_completed_interviews">
+        <item quantity="zero">مقابلات مكتملة%d</item>
+        <item quantity="one">مقابلة مكتملة %d</item>
+        <item quantity="two">مكتملتين  مقابلتين%d</item>
+        <item quantity="few">مشاريع فعالة %d</item>
+        <item quantity="many"> مشاريع فعاله %d</item>
+    </plurals>
+
+    <!--
+    ****************************************
+    * InterviewNewQuestionFragment strings *
+    ****************************************
+    -->
+    <string name="interviewnewquestion_title">ادخل سؤالك</string>
+    <string name="interviewnewquestion_input_hint">سؤال</string>
+    <string name="interviewnewquestion_input_helper">اكتب أو استخدم صوتك لتسجيل سؤالك</string>
+
+    <!--
+    *************************************
+    * InterviewOverviewFragment strings *
+    *************************************
+    -->
+    <string name="interviewoverview_title">صورة الاستبيان العامة</string>
+    <plurals name="interviewoverview_description">
+        <item quantity="other">%1$d سؤال،،%2$d تم تجاهله</item>
+    </plurals>
+    <string name="interviewoverview_btn_cancel">الغاء الاستبيان</string>
+    <string name="interviewoverview_btn_confirm">تأكيد الاجابات</string>
+    <string name="interviewoverview_item_label_skipped">تم التجاهل</string>
+    <string name="interviewoverview_item_label_flagged">وضع علامة</string>
+    <string name="interviewoverview_item_label_probing">تحقق</string>
+    <string name="interviewoverview_item_label_starred">مميز بنجمة</string>
+    <string name="interviewoverview_item_btn_flag">تحديد سؤال</string>
+    <string name="interviewoverview_item_btn_star">تمييز سؤال</string>
+    <string name="interviewoverview_item_btn_retake">اعادة السؤال </string>
+    <string name="interviewoverview_item_btn_remove">ازالة الاجابة </string>
+
+    <!--
+    ********************************
+    * LanguagePackActivity strings *
+    ********************************
+    -->
+    <string name="languagepack_title">حزم اللغات </string>
+    <string name="languagepack_blurb">قبل أن نبدأ ، يرجى تنزيل حزم اللغات أدناه حيث ستحتاج إليها لإجراء مقابلاتك. ستسمح لك حزم اللغات بالتقاط الردود الصوتية لصاحب الاستبيان باستخدام وظيفة تحويل النصوص الى صوت الخاصة بجوجل</string>
+    <string name="languagepack_subtitle">حزم اللغات </string>
+    <string name="languagepack_item_btn_test">اختبار</string>
+    <string name="languagepack_item_btn_manage">الادارة</string>
+
+    <!--
+    *************************
+    * LoginActivity strings *
+    *************************
+    -->
+    <string name="login_title">تسجيل دخول</string>
+    <string name="login_email_hint">البريد الالكتروني</string>
+    <string name="login_password_hint">كلمة المرور</string>
+    <string name="login_btn_login">تسجيل دخول</string>
+    <string name="login_btn_forgot_password">نسيت كلمة المرور</string>
+    <string name="loginactivity_snackbar_auth_failed">فشل عملية التحقق، تحقق من بريدك الالكتروني و كلمة المرور او انشئ حساب</string>
+
+    <!--
+    ******************************
+    * OnboardingActivity strings *
+    ******************************
+    -->
+    <string name="onboarding_option_item_close">قريب</string>
+
+    <!--
+    **********************************
+    * OnboardingItemFragment strings *
+    **********************************
+    -->
+    <string name="onboarding_fragment_item_1_title">خطاب إلى نص</string>
+    <string name="onboarding_fragment_item_1_blurb">
+        باستخدام تحويل الكلام إلى نص ، يمكنك التقاط كل ما يقوله المستفتى دون الحاجة إلى كتابة أي شيء أو نسيان ما يقوله.\n\n
+        لن يؤدي ذلك إلى الاحتفاظ بتسجيل صوتي ، ولكنه سيؤدي إلى إنشاء نص على شاشة تطبيقك.\n\n
+        يمكنك استخدام هذه الميزة أينما ترى رمز الميكروفون عن طريق النقر فوق الرمز والتحدث في الهاتف.\n\n
+        تأكد من وضع الهاتف بالقرب من المستفتى عندما يتحدث.\n\n
+        يمكنك تصحيح أي أخطاء من خلال النقر على النص والكتابة باستخدام لوحة المفاتيح.
+    </string>
+    <string name="onboarding_fragment_item_2_title">إضافة سؤال (استقصاء)</string>
+    <string name="onboarding_fragment_item_2_blurb">
+        يمكنك أن تطلب من المستجيب سؤال متابعة لفهم المزيد عن إجابته عن طريق إضافة سؤال استقصائي.\n\n
+        أضف سؤالاً تجريبياً بالضغط على أيقونة + والاختيار من قائمة الأسئلة الموجودة أو اكتب سؤالاً جديداً قبل أن تطلب من المجيب الإجابة.\n\n
+        إذا كنت تريد طرح سؤال تجريبي للسؤال 1 ، فبعد إجابة المستفتى على السؤال 1 ، حدد "التالي". على الشاشة التي تعرض السؤال 2 ، أضف سؤال التحقيق المتعلق بالسؤال 1.
+    </string>
+    <string name="onboarding_fragment_item_3_title">وضع العلامات والتمييز</string>
+    <string name="onboarding_fragment_item_3_blurb">
+        إذا كنت تعتقد أن أحد المستجيبين قد كشف عن مخاوف تتعلق بالحماية أو الأمان ، فيمكنك وضع علامة على الرد لإعلام الباحثين.\n\n
+        للقيام بذلك ، اضغط على أيقونة العلم في الجزء العلوي من الشاشة.\n\n
+        إذا كنت تعتقد أن أحد المستجيبين قال شيئًا ثاقبًا جدًا من شأنه أن يكون مفيدًا وممتعًا لتحليل البيانات ، فيمكنك تمييز الاستجابة لإعلام الباحثين.\n\n
+        للقيام بذلك ، اضغط على أيقونة النجمة في الجزء العلوي من الشاشة\n\n
+        يمكنك فقط وضع علامة نجمة على أسئلة الإجابة وفتحها ، ولا يمكنك وضع علامة نجمة على الردود أو تمييزها بنجمة على أسئلة الأكواد المتعددة أو الأسئلة ذات التعليمات البرمجية الفردية.
+    </string>
+    <string name="onboarding_fragment_item_4_title">نظرة عامة على المقابلة</string>
+    <string name="onboarding_fragment_item_4_blurb">
+        قبل تقديم المقابلة ، سترى شاشة تحتوي على نظرة عامة على جميع الأسئلة. سيُظهر لك هذا الأسئلة التي قمت بتمييزها وتمييزها بنجمة وتخطيها والتحقيق في الأسئلة التي قمت بإضافتها.\n\n
+        إذا لم يشعر المستفتى بالراحة تجاه إجابته ، فيمكنك إعادة طرح السؤال أو إزالة الإجابة من هذه الشاشة. أنت غير قادر على رؤية الإجابة الأصلية.\n\n
+        يمكنك تمييز رد أو تمييزه بنجمة على هذه الشاشة إذا نسيت القيام بذلك في المقابلة.
+    </string>
+    <string name="onboarding_fragment_item_5_title">ملاحظات المقابلة</string>
+    <string name="onboarding_fragment_item_5_blurb">
+        في نهاية المقابلة ، يمكنك إضافة أفكار أو معلومات إضافية حول المقابلة التي ترغب في مشاركتها مع الباحثين.\n\n
+        للقيام بذلك ، اضغط على أيقونة ملاحظات المقابلة في الجزء السفلي من الشاشة لإضافة ملاحظة.\n\n
+        يمكنك إضافة الملاحظة باستخدام خطاب إلى نص ، أو بالكتابة.
+    </string>
+
+    <!--
+    ***************************
+    * PinCodeActivity strings *
+    ***************************
+    -->
+    <string name="pincode_title_create">إنشاء رقم تعريف الشخصي ذو 6 أرقام الخاص بك</string>
+    <string name="pincode_title_reset">إعادة تعيين رقم التعريف الشخصي  ذو 6 أرقام</string>
+    <string name="pincode_title_validate_existing">التحقق من صحة رقم التعريف الشخصي  ذو 6 أرقام الخاص بك</string>
+    <string name="pincode_title_validate_new">التحقق من صحة رقم التعريف الشخصي الجديد المكون من 6 أرقام</string>
+    <string name="pincode_title_verification">أدخل رقم التعريف الشخصي الخاص بك</string>
+    <string name="pincode_blurb_create">لحماية أمان التطبيق، الرجاء إنشاء رمز تعريف شخصي خاص بك مكون من 6 أرقام. سيتم إستخدام هذا الرمز هذا للوصول إلى التطبيق أثناء جلسة العمل هذه. عندما تقوم بتسجيل الخروج من التطبيق، ستحتاج إلى إنشاء رمز تعريف شخصي جديد.</string>
+    <string name="pincode_blurb_verify">لحماية أمان التطبيق، الرجاء إدخال رمز التعريف الشخصي الخاص بك و المكون من 6 أرقام.</string>
+    <string name="pincode_enter_pin">ادخل الرقم السري</string>
+    <string name="pincode_btn_forgot">نسيت الرقم السري</string>
+    <string name="pincode_pin_created">تم التثبيت</string>
+    <string name="pincode_message_created"> رقم التعريف الشخصي (PIN)</string>
+    <string name="pincode_message_reset">إعادة تعيين رمز التعريف الشخصي بك</string>
+    <string name="pincode_message_changed">تم تغيير رمز التعريف الشخصي الخاص بك</string>
+    <string name="pincode_message_success">رقم التعريف الشخصي الخاص بك صحيح</string>
+    <string name="pincode_message_invalid">%1$d / %2$d رمز التعريف الشخصي الخاص بك غير صحيح، المحاولة </string>
+    <string name="pincode_snackbar_verification_failure">رموز التعريف الشخصية غير متطابقة</string>
+
+    <!--
+   *******************************
+   * ProjectListActivity strings *
+   *******************************
+   -->
+    <string name="projectlist_title">اسم المشروع</string>
+    <plurals name="projectlist_item_interviewcount">
+        <item quantity="zero">مقابلات%d</item>
+        <item quantity="one"> مقابلة %d</item>
+        <item quantity="two">مقابلتين%d</item>
+        <item quantity="few"> مقابلات %d</item>
+        <item quantity="many"> مقابلات %d</item>
+    </plurals>
+    <plurals name="projectlist_project_count">
+        <item quantity="zero">مشاريع%d</item>
+        <item quantity="one">مشروع فعال %d</item>
+        <item quantity="two">مشروعين فعالين%d</item>
+        <item quantity="few"> مشاريع فعاله %d</item>
+        <item quantity="many"> مشاريع فعاله %d</item>
+    </plurals>
+    <string name="projectlist_error_no_projects">لا يوجد مشروع</string>
+
+    <!--
+    *********************************
+    * ResetPasswordActivity strings *
+    *********************************
+    -->
+    <string name="resetpassword_title">نسيت كبمة المرور؟</string>
+    <string name="resetpassword_blurb">نحتاج فقط إلى بريدك الإلكتروني المسجل لنرسل لك تعليمات إعادة تعيين كلمة المرور.</string>
+    <string name="resetpassword_btn_reset_password">اعادة تعيين كلمة المرور</string>
+    <string name="resetpassword_message_success">لقد أرسلنا لك التعليمات ، يرجى التحقق من بريدك الإلكتروني</string>
+    <string name="resetpassword_message_error">لا يوجد حساب بعنوان البريد الإلكتروني هذا</string>
+
+    <!--
+    ****************************
+    * ResetPinActivity strings *
+    ****************************
+    -->
+    <string name="resetpin_btn_reset">إعادة تعيين رمز التعريف الشخصي الخاص بك</string>
+
+    <!--
+    ****************************
+    * SettingsActivity strings *
+    ****************************
+    -->
+    <string name="settings_title">إعدادات</string>
+    <string name="settings_item_reset_pin">اعادة تعيين الرقم السري</string>
+    <string name="settings_item_language_packs">حزم اللغات</string>
+    <string name="settings_item_guide">يرشد</string>
+    <string name="settings_item_logout">تسجيل الخروج</string>
+    <string name="settings_version">نسخة  %s</string>
+
+    <!--
+    *********************************
+    * SkipLogicInfoFragment strings *
+    *********************************
+    -->
+    <string name="skiplogicinfo_fragment_title">شيء يجب معرفته قبل أن تبدأ</string>
+    <string name="skiplogicinfo_fragment_blurb">تتضمن هذه المقابلة بعض أسئلة المنطق التخطي.n\n\لست بحاجة إلى القيام بأي شيء لإنجاح هذا الأمر ، فقط اطرح الأسئلة وسيتم توجيهك إلى المكان الصحيح في المقابلة بناءً على إجابات المستفتى.n\n\بالنسبة للمقابلات مع منطق التخطي ، لن تتمكن من حذف إجابات محددة أو إعادة الإجابة على أي أسئلة في نهاية المقابلة. في نظرة عامة على المقابلة ،سترى فقط الأسئلة المطروحة أثناء المقابلة.</string>
+    <string name="skiplogicinfo_fragment_btn_start">يبدأ</string>
+
+    <!--
+    ***********************************
+    * TemplatesDialogFragment strings *
+    ***********************************
+    -->
+    <string name="templatesdialog_title">اختر سؤالا لإضافته</string>
+    <string name="templatesdialog_btn_add">اضافة سؤال</string>
+
+    <!-- Widget strings -->
+    <string name="expandcollapseindicator_contentdescription_collapsed">اخفاء التفاصيل</string>
+    <string name="expandcollapseindicator_contentdescription_expanded">عرض التفاصيل</string>
+
+    <!--
+    ****************************
+    * WhatsNewActivity strings *
+    ****************************
+    -->
+    <string name="whatsnew_heading">ما هو الجديد؟</string>
+    <string name="whatsnew_subtitle">في هذا الإصدار الجديد من التطبيق الصوتي ، لدينا::</string>
+    <string name="whatsnew_changelog">• يدعم VoiceApp الآن منطق التخطي \n• ابحث عن دليل VoiceApp الجديد في الإعدادات للحصول على تذكيرات ونصائح حول كيفية استخدام ميزات VoiceApp الرئيسية</string>
+    <string name="whatsnew_btn_done">@string/done</string>
+</resources>

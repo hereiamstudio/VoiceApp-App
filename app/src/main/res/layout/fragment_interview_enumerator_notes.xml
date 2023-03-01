@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:id="@+id/titleText"
+                style="@style/TextTitle.Inv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:text="@string/interviewenumeratornotes_heading" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/EditTextInputLayoutStyle.Inv"
+            android:id="@+id/textInputEnumeratorNotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/default_padding"
+            android:textColorHint="@color/text_dark"
+            android:textAlignment="viewStart"
+            android:hint="@string/interviewenumeratornotes_input_hint"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_mic"
+            app:endIconTint="@color/colorAccent"
+            app:helperText="@string/interviewenumeratornotes_input_helper">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/EditText"
+                android:id="@+id/editEnumeratorNotes"
+                android:paddingStart="@dimen/default_padding"
+                android:paddingEnd="@dimen/default_padding"
+                android:minLines="1"
+                android:lines="10"
+                android:textColor="@color/text_dark"
+                android:inputType="text|textMultiLine"
+                android:importantForAutofill="no"
+                android:textAlignment="inherit" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Button.TextButton"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btnAddNote"
+                style="@style/Button"
+                android:text="@string/interviewenumeratornotes_btn_add" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

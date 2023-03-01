@@ -1,0 +1,149 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.appdistribution'
+}
+
+android {
+    namespace 'com.voiceapp'
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVer
+
+    defaultConfig {
+        applicationId 'com.voiceapp.app'
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode project.findProperty('versionCode')?.toInteger() ?: 60
+        versionName '1.1.1'
+        archivesBaseName = "voiceapp-$versionName"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+        firebaseAppDistribution {
+            artifactType = 'APK'
+        }
+    }
+
+    signingConfigs {
+        // We use a global debug keystore for debug and staging builds. As we use some Firebase
+        // stuff that's tied to signing keystore fingerprints, it's cumbersome to get developers to
+        // set up their own Firebase project, or get someone to grant access. This way, all
+        // developers use the same signing certificate so no setup is required. Of course, release
+        // uses proper keystores.
+        globalDebug {
+            storeFile file(project.findProperty('voiceappDebugStoreFile') ?: '../debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+
+        release {
+            storeFile file(project.findProperty('voiceappStoreFile') ?: '/dev/null')
+            storePassword project.findProperty('voiceappStorePassword') ?: 'not_set'
+            keyAlias project.findProperty('voiceappKeyAlias') ?: 'not_set'
+            keyPassword project.findProperty('voiceappKeyPassword') ?: 'not_set'
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            signingConfig signingConfigs.debug
+
+            final def publicKey = project.findProperty('voiceappPublicKeyStaging') ?: 'not_set'
+            buildConfigField('String', 'PUBLIC_KEY', "\"$publicKey\"")
+        }
+
+        staging {
+            initWith debug
+            applicationIdSuffix '.staging'
+            versionNameSuffix '-staging'
+
+            firebaseAppDistribution {
+                groups = 'here-i-am-testers'
+            }
+        }
+
+        release {
+            minifyEnabled false // TODO: review code to allow us to enable this.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            firebaseAppDistribution {
+                groups = 'here-i-am-studio-testers'
+            }
+
+            final def publicKey = project.findProperty('voiceappPublicKeyProduction') ?: 'not_set'
+            buildConfigField('String', 'PUBLIC_KEY', "\"$publicKey\"")
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':androidcore')
+
+    // Dagger 2
+    api "com.google.dagger:dagger-android:$daggerVersion"
+    api "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    // Android Support / UI
+    implementation "androidx.activity:activity-ktx:$androidXActivityVersion"
+    implementation "androidx.fragment:fragment-ktx:$androidXFragmentVersion"
+    implementation "androidx.appcompat:appcompat:$androidAppCompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$androidConstraintLayoutVersion"
+    implementation "androidx.recyclerview:recyclerview:$androidRecyclerViewVersion"
+    implementation "com.google.android.material:material:$materialDesignVersion"
+    implementation "androidx.biometric:biometric:$androidBiometricVersion"
+    implementation "androidx.viewpager2:viewpager2:$androidViewPager2Version"
+
+    // Android Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$androidLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$androidLifecycleVersion"
+
+    // Work Manager (for syncing)
+    implementation "androidx.work:work-runtime-ktx:$androidWorkVersion"
+    // Including this lib fixes a dependency bug in work manager
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    // Firebase
+    implementation "com.google.firebase:firebase-database"
+    implementation "com.google.firebase:firebase-firestore-ktx"
+    implementation "com.google.firebase:firebase-auth"
+
+    // Crashlytics
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-crashlytics"
+
+    // JSON
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // Logging
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+
+    // Testing
+    testImplementation project(':testutils')
+    testImplementation "androidx.test.ext:junit:$androidTestExtVersion"
+    testImplementation "androidx.arch.core:core-testing:$androidArchCoreTestingVersion"
+
+    androidTestImplementation "androidx.test:core:$androidTestVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidTestExtVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidEspressoVersion"
+    androidTestImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+}
